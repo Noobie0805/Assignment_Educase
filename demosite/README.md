@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Assignment_Educase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic React assignment project that demonstrates a simple **login flow** using temporary local storage.  
+(
+    Here ,i have tried to make it somewhat pixel perfect and for a basic login i have used local storage to store data for signup and login , the userdata gets cleared when the profile page is refreshed or closed
+) 
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Landing Page** – Introduction to the app  
+- **Login Page** – User enters email & password  
+- **Signup Page** – Register with basic details  
+- **Profile Page** – Accessible only after login  
+- **Temporary Local Storage** – Used to store user data on the client side  
+- **Auto Logout** – User is logged out automatically when the page is refreshed or closed  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Login Mechanism
 
-### `npm test`
+1. **Signup**  
+   - When a user signs up, the details (e.g., email, password, name) are stored in `localStorage`.  
+   - Example structure:  
+     ```json
+     {
+       "email": "test@example.com",
+       "password": "123456",
+       "name": "Test User"
+     }
+     ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Login**  
+   - On login, the app checks `localStorage` for stored credentials.  
+   - If the email/password match, the user object is saved in `localStorage` under `"user"` key.  
+   - The user is then redirected to the **Profile page**.
 
-### `npm run build`
+3. **Profile Access**  
+   - The Profile page fetches the `user` data from `localStorage`.  
+   - If no user is found, it redirects back to **Login**.  
+   - This prevents unauthorized access.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Temporary Session (Auto Logout)**  
+   - The login session is temporary.  
+   - If the user refreshes or closes the tab, `localStorage` clears automatically (simulating logout).  
+   - On the next visit, the user has to log in again.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Tech Stack
 
-### `npm run eject`
+- **React.js** – Component-based UI  
+- **React Router** – Navigation between pages  
+- **CSS Modules** – Scoped styling  
+- **LocalStorage API** – Temporary client-side storage  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚡ Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Clone the repository
+git clone https://github.com/Noobie0805/Assignment_Educase.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Navigate into the project
+cd Assignment_Educase
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start development server
+npm start
