@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loginScreen {
+    height: 812px;
+    width: 375px;
+    border: 1px solid #CBCBCB;
+    background-color: #F7F8F9;
+}
+
+.loginScreen_header {
+    height: 69px;
+    width: 188px;
+    margin: 40px 167px 14px 20px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.loginScreen_para {
+    margin: 0 123px 24px 20px;
+    font-size: 18px;
+    color: #1D2226;
+    opacity: 0.6;
+    text-align: left;
+    font-size: 18px;
+}
+
+.loginScreen_email_password {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginScreen_email_password_label {
+    color: #6C25FF;
+    font-size: 13px;
+    position: relative;
+    left: 29px;
+    top: 6px;
+    background-color: #F7F8F9;
+    width: 100px;
+    height: 15px;
+    padding-left: 5px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.loginScreen_email_password_label_required {
+    color: red;
+}
+
+.loginScreen_email_password_input {
+    width: 335px;
+    height: 40px;
+    margin: 0 20px 23px 20px;
+    border-radius: 6px;
+    border: 2px solid #CBCBCB;
+    background-color: #F7F8F9;
+    padding-left: 15px;
+}
+
+.loginScreen_email_password_input input {
+    font-size: 16px;
+}
+
+
+.loginScreen_email_password_input input::placeholder {
+    font-size: 14px;
+    color: #919191;
+    position: relative;
+    left: 15px;
+}
+
+.loginScreen_login {
+    width: 335px;
+    height: 46px;
+    margin: 0 20px 14px 20px;
+    background-color: #CBCBCB;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.loginScreen_login_text {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}

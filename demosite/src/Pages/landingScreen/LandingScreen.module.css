@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landingScreen {
+    height: 812px;
+    width: 375px;
+    border: 1px solid #CBCBCB;
+    background-color: #F7F8F9;
+}
+
+.landingScreen_welcome {
+    position: relative;
+    width: 231px;
+    height: 33px;
+    font-size: 28px;
+    color: #1d2226;
+    margin: 549px 124px 10px 20px;
+    font-weight: 500;
+}
+
+.landingScreen_para {
+    position: relative;
+    width: 232px;
+    height: 48px;
+    font-size: 18px;
+    text-align: left;
+    color: #1d2226;
+    opacity: 0.6;
+    margin: 0 123px 29px 20px;
+}
+
+.landingScreen_createAccount {
+    position: relative;
+    width: 335px;
+    height: 46px;
+    border-radius: 6px;
+    background-color: #6C25FF;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 10px 20px;
+    font-weight: 500;
+}
+
+
+.landingScreen_createAccount_text {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.landingScreen_login {
+    position: relative;
+    width: 335px;
+    height: 46px;
+    border-radius: 6px;
+    opacity: 1;
+    background-color: #6C25FF4B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 10px 20px;
+    cursor: pointer;
+}
+
+.landingScreen_login_text {
+    position: relative;
+    color: #1D2226;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+}
