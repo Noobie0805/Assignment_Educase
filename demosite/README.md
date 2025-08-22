@@ -21,13 +21,12 @@ A basic React assignment project that demonstrates a simple **login flow** using
 ## 🛠️ Login Mechanism
 
 1. **Signup**  
-   - When a user signs up, the details (e.g., email, password, name) are stored in `localStorage`.  
+   - When a user signs up, the details (e.g., email,password) are stored in `localStorage`.  
    - Example structure:  
      ```json
      {
        "email": "test@example.com",
-       "password": "123456",
-       "name": "Test User"
+       "password": "123456"
      }
      ```
 

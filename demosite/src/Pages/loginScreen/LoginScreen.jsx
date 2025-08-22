@@ -37,7 +37,6 @@ const LoginScreen = () => {
             <div className={Style.loginScreen_email_password}>
                 <span className={Style.loginScreen_email_password_label}>
                     Email Address
-                    <span className={Style.loginScreen_email_password_label_required}>*</span>
                 </span>
                 <input
                     className={Style.loginScreen_email_password_input}
@@ -52,7 +51,6 @@ const LoginScreen = () => {
             <div className={Style.loginScreen_email_password}>
                 <span className={Style.loginScreen_email_password_label}>
                     Password
-                    <span className={Style.loginScreen_email_password_label_required}>*</span>
                 </span>
                 <input
                     className={Style.loginScreen_email_password_input}

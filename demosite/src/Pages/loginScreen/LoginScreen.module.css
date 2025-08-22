@@ -47,9 +47,6 @@
     font-weight: 500;
 }
 
-.loginScreen_email_password_label_required {
-    color: red;
-}
 
 .loginScreen_email_password_input {
     width: 335px;
